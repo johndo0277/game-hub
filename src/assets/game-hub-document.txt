@@ -1,0 +1,16 @@
+/* game-hub Project
+1. using Chakras UI, vite@4.1.0 and TypeScript
+2. axios module to connect the back end
+*/
+
+A. Layout : 
+1. define Grid & GridItem 
+ <Grid templateAreas={{
+        base: `"nav" "main" `,
+        lg: `"nav nav" "aside main" `,
+      }}
+</Grid>
+2. create a reponsive layout 
+3. create a switch color mode 
+    - (Switch : colorScheme-green, isChecked, onChange event), useState to change color mode 
+    - const { toggleColorMode, colorMode } = useColorMode();
