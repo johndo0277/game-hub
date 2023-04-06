@@ -14,3 +14,4 @@ A. Layout :
 3. create a switch color mode 
     - (Switch : colorScheme-green, isChecked, onChange event), useState to change color mode 
     - const { toggleColorMode, colorMode } = useColorMode();
+4. Fetch game list
