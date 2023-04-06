@@ -2,17 +2,18 @@ import {useEffect, useState} from 'react'
 import apiClient from '../serivices/api-client';
 import { CanceledError } from 'axios';
 
+
+export interface Game {
+  id: number;
+  name: string; 
+  background_image: string;
+}
+interface FetchGamesReponse {
+  count: number;
+  results: Game[];
+}
+
 const useGames = () => {
-  
-  interface Game {
-    id: number;
-    name: string;
-  }
-  interface FetchGamesReponse {
-    count: number;
-    results: Game[];
-  }
-  
     const [games, setGames] = useState<Game[]>([]);
     const [error, setError] = useState("");
   //practice cancelling Effect() by using AbortController
